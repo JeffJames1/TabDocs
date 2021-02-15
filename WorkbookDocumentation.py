@@ -545,22 +545,8 @@ def main():
     logging.basicConfig(filename='WorkbookDocumentation.log',
                         level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     # try:
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\excel_test.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\HCC Opportunity Updated.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\1st Q1.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\docs in\\standard frequent flyer.tds",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\HealtheCare Identification Cerner_demo reformat.twbx",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("/Users/jj2362/Desktop/asQuality Measures_unvtds_v01.tds",
-    #                        '/Users/jj2362/Desktop/docs out')
-    workbook_documentation("/Users/jj2362/Desktop/Registries Outcomes.twb",
-                           '/Users/jj2362/Desktop/docs out')
-    # workbook_documentation("/Users/jj2362/Desktop/Superstore.twbx",
-    #                        '/Users/jj2362/Desktop/docs out')
+    workbook_documentation("/some/path/to/some_workbook.twb",
+                           '/some/path/to/some_output_folder')
     # except:
     #     logging.exception('')
 
