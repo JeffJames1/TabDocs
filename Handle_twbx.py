@@ -1,3 +1,7 @@
+"""
+Forked from Tableau document API
+https://github.com/tableau/document-api-python
+"""
 import contextlib
 import os
 import shutil
