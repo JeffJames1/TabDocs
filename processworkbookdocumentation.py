@@ -5,101 +5,123 @@
 #    Apr 14, 2017 04:20:48 PM
 from sys import platform as _platform
 
-try:
-    from Tkinter import *
-except ImportError:
-    from tkinter import *
+from tkinter import *
 
-try:
-    import ttk
-    py3 = 0
-except ImportError:
-    import tkinter.ttk as ttk
-    py3 = 1
-
+import tkinter.ttk as ttk
+import argparse
 import processworkbookdocumentation_support
 from BasicStyle import BasicStyle
-import argparse
 
 
 def vp_start_gui():
-    '''Starting point when module is the main routine.'''
-    global val, w, root
-    parser = argparse.ArgumentParser(description='Tableau content to document')
-    parser.add_argument('--config', type=str, help='Config file to open')
-    parser.add_argument('--autostart', help='Start automatically', action='store_true')
-    parser.add_argument('--noerrordialog', help='Suppress error dialog boxes', action='store_true')
+    """Starting point when module is the main routine."""
+    global W, root
+    parser = argparse.ArgumentParser(description="Tableau content to document")
+    parser.add_argument("--config", type=str, help="Config file to open")
+    parser.add_argument("--autostart", help="Start automatically", action="store_true")
+    parser.add_argument(
+        "--noerrordialog", help="Suppress error dialog boxes", action="store_true"
+    )
     args = parser.parse_args()
 
     root = Tk()
-    processworkbookdocumentation_support.set_Tk_var()
-    top = Workbook_Documentation(root)
+    processworkbookdocumentation_support.set_tk_var()
+    top = WorkbookDocumentation(root)
     processworkbookdocumentation_support.init(root, top)
     if args.config:
         processworkbookdocumentation_support.open_config(args.config)
     if args.noerrordialog:
-        processworkbookdocumentation_support.suppress_error_dialogs.set(args.noerrordialog)
+        processworkbookdocumentation_support.suppress_error_dialogs.set(
+            args.noerrordialog
+        )
     if args.autostart:
         processworkbookdocumentation_support.auto_start.set(args.autostart)
         processworkbookdocumentation_support.process_files()
     root.mainloop()
 
 
-w = None
+W = None
 
 
 def create_workbook_documentation(root, *args, **kwargs):
-    '''Starting point when module is imported by another program.'''
-    global w, w_win, rt
-    rt = root
-    w = Toplevel(root)
-    processworkbookdocumentation_support.set_Tk_var()
-    top = Workbook_Documentation(w)
-    processworkbookdocumentation_support.init(w, top, *args, **kwargs)
-    return w, top
+    """Starting point when module is imported by another program."""
+    global W, RT
+    RT = root
+    W = Toplevel(root)
+    processworkbookdocumentation_support.set_tk_var()
+    top = WorkbookDocumentation(W)
+    processworkbookdocumentation_support.init(W, top, *args, **kwargs)
+    return W, top
 
 
 def destroy_workbook_documentation():
-    global w
-    w.destroy()
-    w = None
+    """Destroy window"""
+    global W
+    W.destroy()
+    W = None
 
 
-class Workbook_Documentation(BasicStyle):
+class WorkbookDocumentation(BasicStyle):
+    """This class configures and populates the toplevel window.
+    top is the toplevel containing window."""
+
     def __init__(self, top=None):
-        """This class configures and populates the toplevel window.
-           top is the toplevel containing window."""
-
+        """Initialize the class"""
         top.title("Workbook Documenter")
         if _platform == "darwin":
             top.configure(background="#e8e8e8")
         self.top = top
 
-        self.create_menu(top, processworkbookdocumentation_support.open_config,
-                         processworkbookdocumentation_support.save_config,
-                         processworkbookdocumentation_support.exit_window)
+        self.create_menu(
+            top,
+            processworkbookdocumentation_support.open_config,
+            processworkbookdocumentation_support.save_config,
+            processworkbookdocumentation_support.exit_window,
+        )
 
         # Add a grid
         self.mainframe = self.create_frame(top)
 
         # add progress objects. Not exposed until called
-        self.progbar = ttk.Progressbar(self.mainframe, orient=HORIZONTAL, mode='determinate')
+        self.progbar = ttk.Progressbar(
+            self.mainframe, orient=HORIZONTAL, mode="determinate"
+        )
         self.file_label = ttk.Label(self.mainframe)
 
-        self.Labelframe1, self.rdoFile = self.create_file_dir_frame(self.mainframe, 0,
-                                                                    processworkbookdocumentation_support.file_or_dir)
+        self.Labelframe1, self.rdoFile = self.create_file_dir_frame(
+            self.mainframe, 0, processworkbookdocumentation_support.file_or_dir
+        )
 
-        self.InputFileDir, self.InEntry, self.InBrowse = self.create_row(self.mainframe, 2,
-                                                                         '''File or Directory to process:''',
-                                                                         processworkbookdocumentation_support.inEntryTxt,
-                                                                         processworkbookdocumentation_support.inBrowse,
-                                                                         '''Browse''')
+        self.InputFileDir, self.InEntry, self.InBrowse = self.create_row(
+            self.mainframe,
+            2,
+            """File or Directory to process:""",
+            processworkbookdocumentation_support.inEntryTxt,
+            processworkbookdocumentation_support.in_browse,
+            """Browse""",
+        )
 
-        self.SaveDir, self.SaveEntry, self.outBrowse = self.create_row(self.mainframe, 3,
-                                                                       '''Save Directory:''',
-                                                                       processworkbookdocumentation_support.outEntryTxt,
-                                                                       processworkbookdocumentation_support.outBrowse,
-                                                                       '''Browse''')
+        (
+            self.styleguidefiledir,
+            self.styleguideentry,
+            self.styleguidebrowse,
+        ) = self.create_row(
+            self.mainframe,
+            3,
+            """Style Guide for Validation:""",
+            processworkbookdocumentation_support.styleguideEntryTxt,
+            processworkbookdocumentation_support.styleguide_browse,
+            """Browse""",
+        )
+
+        self.SaveDir, self.SaveEntry, self.outBrowse = self.create_row(
+            self.mainframe,
+            4,
+            """Save Directory:""",
+            processworkbookdocumentation_support.outEntryTxt,
+            processworkbookdocumentation_support.out_browse,
+            """Browse""",
+        )
 
         optionframe = LabelFrame(self.mainframe)
         optionframe.grid(row=6, columnspan=10, rowspan=2)
@@ -108,29 +130,42 @@ class Workbook_Documentation(BasicStyle):
         if _platform == "darwin":
             optionframe.configure(background="#e8e8e8")
 
-        self.AutoStart = ttk.Checkbutton(optionframe, text='Start on open',
-                                         variable=processworkbookdocumentation_support.auto_start,
-                                         onvalue=True, offvalue=False,)
+        self.AutoStart = ttk.Checkbutton(
+            optionframe,
+            text="Start on open",
+            variable=processworkbookdocumentation_support.auto_start,
+            onvalue=True,
+            offvalue=False,
+        )
         self.AutoStart.grid(row=1, column=1)
 
-        self.SuppressErrorDialogs = ttk.Checkbutton(optionframe, text='Hide Error Dialogs',
-                                         variable=processworkbookdocumentation_support.suppress_error_dialogs,
-                                         onvalue=True, offvalue=False)
+        self.SuppressErrorDialogs = ttk.Checkbutton(
+            optionframe,
+            text="Hide Error Dialogs",
+            variable=processworkbookdocumentation_support.suppress_error_dialogs,
+            onvalue=True,
+            offvalue=False,
+        )
         self.SuppressErrorDialogs.grid(row=1, column=2)
 
-        self.create_ok_quit(self.mainframe, processworkbookdocumentation_support.process_files,
-                            processworkbookdocumentation_support.exit_window)
+        self.create_ok_quit(
+            self.mainframe,
+            processworkbookdocumentation_support.process_files,
+            processworkbookdocumentation_support.exit_window,
+        )
 
-    def add_progbar(self, value, max, row):
-        self.progbar.configure(value=value, maximum=max)
+    def add_progbar(self, value, max_value, row):
+        """Create progress bar for processing of files"""
+        self.progbar.configure(value=value, maximum=max_value)
         self.progbar.grid(row=row, columnspan=8, sticky=(N, W, E, S))
-        self.file_label.grid(row=row+1, columnspan=8, sticky=(N, W, E, S))
+        self.file_label.grid(row=row + 1, columnspan=8, sticky=(N, W, E, S))
 
     def update_progbar(self, step, infile_name):
+        """Update status of processing"""
         self.progbar.config(value=step)
         self.file_label.configure(text=infile_name, anchor=CENTER, padding=10)
         self.top.update()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     vp_start_gui()

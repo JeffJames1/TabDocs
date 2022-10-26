@@ -1,0 +1,24 @@
+{
+    "_README": "PUT ALL STYLES IN DOUBLE QUOTES IN LISTS (SQUARE BRACKETS) AS BELOW",
+    "fonts": ["Tableau Bold", "Tableau Book", "Tableau Light", "Tableau Medium"],
+    "font-sizes": ["28", "18", "14", "11", "9"],
+    "font-colors": [
+        "#000000"
+    ],
+    "all-colors": [
+        "#4F6980", "#BFBB60", "#D7CE9F", "#849DB1", "#F47942", "#B9AA97",
+        "#A3CEAA", "#FBB04E", "#7E856D", "#63BB66", "#B66353", "#4A4A4A",
+        "#D3293D"
+    ],
+    "background-colors": [
+        "#E6E6E6", "#000000", "#CBCBCB", "#C0C0C0", "#F3F3F3", "#B0B0B0",
+        "#F5F5F5", "#CCCCCC", "#F3F3F3", "#E14D10", "#515859", "#2A71C5"
+    ],
+    "margin": ["20", "20", "20"],
+    "margin-top": ["0"],
+    "margin-bottom": ["0"],
+    "border-style": ["none", "solid"],
+    "border-colors": ["#000000"],
+    "border-width": ["0"],
+    "padding": ["0", "4", "8"]
+}

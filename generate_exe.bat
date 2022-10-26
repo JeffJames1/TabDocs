@@ -1,1 +1,1 @@
-"C:\Program Files\Python37\Scripts\pyinstaller" processworkbookdocumentation.py --onefile -n workbook_documentation.exe --hidden-import pandas._libs.tslibs.timedeltas --noconsole
+pyinstaller processworkbookdocumentation.py --onefile -n workbook_documentation.exe --hidden-import pandas._libs.tslibs.timedeltas --noconsole

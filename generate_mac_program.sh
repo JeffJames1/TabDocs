@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pyinstaller --onefile processworkbookdocumentation.py
+./.venv/bin/python -m PyInstaller --onefile processworkbookdocumentation.py

@@ -1,0 +1,556 @@
+2022-01-31 19:16:27,744 Started
+2022-01-31 19:16:47,906 Input File is /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:16:47,907 Output directory is /Users/jj2362/Desktop/docs out
+2022-01-31 19:16:47,907 infile name = /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:16:47,907 Starting to process /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:16:48,046 now processing Parameters data source
+2022-01-31 19:16:48,046 Found 0 connections
+2022-01-31 19:16:48,046 Found 8 parameters
+2022-01-31 19:16:48,047 Found 8 calculations
+2022-01-31 19:16:48,047 Found 0 custom SQL queries
+2022-01-31 19:16:48,047 Found 0 tables
+2022-01-31 19:16:48,047 Found 0 columns
+2022-01-31 19:16:48,047 now processing Unified Analytics - SJS Alert Discovery data source
+2022-01-31 19:16:48,047 Found 1 connections
+2022-01-31 19:16:48,047 Found 8 parameters
+2022-01-31 19:16:48,051 Found 69 calculations
+2022-01-31 19:16:48,051 Found 0 custom SQL queries
+2022-01-31 19:16:48,051 Found 0 tables
+2022-01-31 19:16:48,053 Found 33 columns
+2022-01-31 19:16:48,054 Found 12 columns in # Of Patients
+2022-01-31 19:16:48,054 Found -12 captions in # Of Patients
+2022-01-31 19:16:48,056 Found 29 columns in % First
+2022-01-31 19:16:48,056 Found -41 captions in % First
+2022-01-31 19:16:48,058 Found 20 columns in Alert Details
+2022-01-31 19:16:48,058 Found -61 captions in Alert Details
+2022-01-31 19:16:48,059 Found 11 columns in Alerts A
+2022-01-31 19:16:48,059 Found -72 captions in Alerts A
+2022-01-31 19:16:48,062 Found 16 columns in Alerts Calendar
+2022-01-31 19:16:48,062 Found -88 captions in Alerts Calendar
+2022-01-31 19:16:48,064 Found 13 columns in Alerts Disch
+2022-01-31 19:16:48,064 Found -101 captions in Alerts Disch
+2022-01-31 19:16:48,067 Found 17 columns in Alerts F
+2022-01-31 19:16:48,067 Found -118 captions in Alerts F
+2022-01-31 19:16:48,070 Found 13 columns in Alerts Fin
+2022-01-31 19:16:48,070 Found -131 captions in Alerts Fin
+2022-01-31 19:16:48,073 Found 10 columns in Alerts Hour
+2022-01-31 19:16:48,073 Found -141 captions in Alerts Hour
+2022-01-31 19:16:48,076 Found 17 columns in Alerts M
+2022-01-31 19:16:48,076 Found -158 captions in Alerts M
+2022-01-31 19:16:48,079 Found 13 columns in Alerts Race
+2022-01-31 19:16:48,079 Found -171 captions in Alerts Race
+2022-01-31 19:16:48,083 Found 10 columns in Alerts WD
+2022-01-31 19:16:48,083 Found -181 captions in Alerts WD
+2022-01-31 19:16:48,087 Found 15 columns in Alerts by Encounter Type (2)
+2022-01-31 19:16:48,087 Found -196 captions in Alerts by Encounter Type (2)
+2022-01-31 19:16:48,091 Found 15 columns in Alerts by Location (2)
+2022-01-31 19:16:48,091 Found -211 captions in Alerts by Location (2)
+2022-01-31 19:16:48,096 Found 14 columns in Alerts by Med Service (2)
+2022-01-31 19:16:48,096 Found -225 captions in Alerts by Med Service (2)
+2022-01-31 19:16:48,100 Found 14 columns in Alerts over Time (2)
+2022-01-31 19:16:48,100 Found -239 captions in Alerts over Time (2)
+2022-01-31 19:16:48,105 Found 15 columns in Avg Alerts by Encounter Type (2)
+2022-01-31 19:16:48,105 Found -254 captions in Avg Alerts by Encounter Type (2)
+2022-01-31 19:16:48,111 Found 15 columns in Avg Alerts by Location (2)
+2022-01-31 19:16:48,111 Found -269 captions in Avg Alerts by Location (2)
+2022-01-31 19:16:48,116 Found 15 columns in Avg Alerts by Med Service (2)
+2022-01-31 19:16:48,116 Found -284 captions in Avg Alerts by Med Service (2)
+2022-01-31 19:16:48,122 Found 15 columns in Avg Alerts over Time (2)
+2022-01-31 19:16:48,122 Found -299 captions in Avg Alerts over Time (2)
+2022-01-31 19:16:48,128 Found 17 columns in Avg All Timing
+2022-01-31 19:16:48,128 Found -316 captions in Avg All Timing
+2022-01-31 19:16:48,134 Found 18 columns in Avg SIRS Timing
+2022-01-31 19:16:48,134 Found -334 captions in Avg SIRS Timing
+2022-01-31 19:16:48,141 Found 18 columns in Avg Sepsis Timing
+2022-01-31 19:16:48,141 Found -352 captions in Avg Sepsis Timing
+2022-01-31 19:16:48,149 Found 23 columns in Demographic Details
+2022-01-31 19:16:48,149 Found -375 captions in Demographic Details
+2022-01-31 19:16:48,157 Found 17 columns in ET Volume Diag
+2022-01-31 19:16:48,157 Found -392 captions in ET Volume Diag
+2022-01-31 19:16:48,165 Found 24 columns in FA% ET (2)
+2022-01-31 19:16:48,166 Found -416 captions in FA% ET (2)
+2022-01-31 19:16:48,175 Found 24 columns in FA% Loc (2)
+2022-01-31 19:16:48,175 Found -440 captions in FA% Loc (2)
+2022-01-31 19:16:48,185 Found 24 columns in FA% MS (2)
+2022-01-31 19:16:48,185 Found -464 captions in FA% MS (2)
+2022-01-31 19:16:48,195 Found 24 columns in FA% Over Time (2)
+2022-01-31 19:16:48,195 Found -488 captions in FA% Over Time (2)
+2022-01-31 19:16:48,206 Found 16 columns in Highest Alert: SIRS
+2022-01-31 19:16:48,206 Found -504 captions in Highest Alert: SIRS
+2022-01-31 19:16:48,218 Found 16 columns in Highest Alert: Sepsis
+2022-01-31 19:16:48,218 Found -520 captions in Highest Alert: Sepsis
+2022-01-31 19:16:48,231 Found 18 columns in Location Volume Diag
+2022-01-31 19:16:48,231 Found -538 captions in Location Volume Diag
+2022-01-31 19:16:48,243 Found 19 columns in MS Volume Diag
+2022-01-31 19:16:48,243 Found -557 captions in MS Volume Diag
+2022-01-31 19:16:48,256 Found 22 columns in NTT Med Service
+2022-01-31 19:16:48,256 Found -579 captions in NTT Med Service
+2022-01-31 19:16:48,269 Found 22 columns in NTT Nurse
+2022-01-31 19:16:48,269 Found -601 captions in NTT Nurse
+2022-01-31 19:16:48,283 Found 25 columns in Notification Details
+2022-01-31 19:16:48,283 Found -626 captions in Notification Details
+2022-01-31 19:16:48,298 Found 16 columns in Notification Distribution
+2022-01-31 19:16:48,298 Found -642 captions in Notification Distribution
+2022-01-31 19:16:48,313 Found 17 columns in Notification Rate Over Time
+2022-01-31 19:16:48,313 Found -659 captions in Notification Rate Over Time
+2022-01-31 19:16:48,328 Found 21 columns in Notification Time By Encounter Type
+2022-01-31 19:16:48,329 Found -680 captions in Notification Time By Encounter Type
+2022-01-31 19:16:48,344 Found 22 columns in Notification Time By Location
+2022-01-31 19:16:48,344 Found -702 captions in Notification Time By Location
+2022-01-31 19:16:48,360 Found 21 columns in Notification Time Over Time
+2022-01-31 19:16:48,360 Found -723 captions in Notification Time Over Time
+2022-01-31 19:16:48,377 Found 20 columns in Notifications by Encounter Type
+2022-01-31 19:16:48,377 Found -743 captions in Notifications by Encounter Type
+2022-01-31 19:16:48,394 Found 20 columns in Notifications by location
+2022-01-31 19:16:48,394 Found -763 captions in Notifications by location
+2022-01-31 19:16:48,411 Found 21 columns in Notifications by nurse
+2022-01-31 19:16:48,411 Found -784 captions in Notifications by nurse
+2022-01-31 19:16:48,429 Found 14 columns in Notified Provider
+2022-01-31 19:16:48,429 Found -798 captions in Notified Provider
+2022-01-31 19:16:48,446 Found 13 columns in Number of Alerts
+2022-01-31 19:16:48,446 Found -811 captions in Number of Alerts
+2022-01-31 19:16:48,464 Found 17 columns in Overall Notification Rate
+2022-01-31 19:16:48,465 Found -828 captions in Overall Notification Rate
+2022-01-31 19:16:48,483 Found 21 columns in Per Patient
+2022-01-31 19:16:48,483 Found -849 captions in Per Patient
+2022-01-31 19:16:48,502 Found 19 columns in Progression % ET (2)
+2022-01-31 19:16:48,502 Found -868 captions in Progression % ET (2)
+2022-01-31 19:16:48,521 Found 20 columns in Progression % Loc (2)
+2022-01-31 19:16:48,521 Found -888 captions in Progression % Loc (2)
+2022-01-31 19:16:48,541 Found 19 columns in Progression % MS (2)
+2022-01-31 19:16:48,542 Found -907 captions in Progression % MS (2)
+2022-01-31 19:16:48,561 Found 15 columns in SIRS Alerts
+2022-01-31 19:16:48,561 Found -922 captions in SIRS Alerts
+2022-01-31 19:16:48,581 Found 17 columns in SIRS Diagnosis %
+2022-01-31 19:16:48,581 Found -939 captions in SIRS Diagnosis %
+2022-01-31 19:16:48,601 Found 18 columns in SIRS Notification Rate
+2022-01-31 19:16:48,601 Found -957 captions in SIRS Notification Rate
+2022-01-31 19:16:48,622 Found 15 columns in SIRS Notifications
+2022-01-31 19:16:48,622 Found -972 captions in SIRS Notifications
+2022-01-31 19:16:48,643 Found 16 columns in Sepsis Alerts
+2022-01-31 19:16:48,643 Found -988 captions in Sepsis Alerts
+2022-01-31 19:16:48,664 Found 15 columns in Sepsis Alerts    
+2022-01-31 19:16:48,664 Found -1003 captions in Sepsis Alerts    
+2022-01-31 19:16:48,687 Found 24 columns in Sepsis Details
+2022-01-31 19:16:48,687 Found -1027 captions in Sepsis Details
+2022-01-31 19:16:48,710 Found 17 columns in Sepsis Diagnosis %
+2022-01-31 19:16:48,710 Found -1044 captions in Sepsis Diagnosis %
+2022-01-31 19:16:48,733 Found 14 columns in Sepsis Encounters
+2022-01-31 19:16:48,733 Found -1058 captions in Sepsis Encounters
+2022-01-31 19:16:48,756 Found 18 columns in Sepsis Notification Rate
+2022-01-31 19:16:48,756 Found -1076 captions in Sepsis Notification Rate
+2022-01-31 19:16:48,779 Found 15 columns in Sepsis Notifications
+2022-01-31 19:16:48,779 Found -1091 captions in Sepsis Notifications
+2022-01-31 19:16:48,802 Found 13 columns in Severity
+2022-01-31 19:16:48,802 Found -1104 captions in Severity
+2022-01-31 19:16:48,826 Found 17 columns in Time Volume Diag
+2022-01-31 19:16:48,826 Found -1121 captions in Time Volume Diag
+2022-01-31 19:16:48,850 Found 13 columns in ToolTip Alert / Patient
+2022-01-31 19:16:48,850 Found -1134 captions in ToolTip Alert / Patient
+2022-01-31 19:16:48,874 Found 14 columns in ToolTip Alert Volume
+2022-01-31 19:16:48,874 Found -1148 captions in ToolTip Alert Volume
+2022-01-31 19:16:48,898 Found 13 columns in ToolTip Encounters
+2022-01-31 19:16:48,898 Found -1161 captions in ToolTip Encounters
+2022-01-31 19:16:48,923 Found 13 columns in ToolTip Female
+2022-01-31 19:16:48,923 Found -1174 captions in ToolTip Female
+2022-01-31 19:16:48,947 Found 13 columns in ToolTip Male
+2022-01-31 19:16:48,947 Found -1187 captions in ToolTip Male
+2022-01-31 19:16:48,972 Found 13 columns in ToolTip Noti Time
+2022-01-31 19:16:48,972 Found -1200 captions in ToolTip Noti Time
+2022-01-31 19:16:48,997 Found 20 columns in ToolTip Noti Vol
+2022-01-31 19:16:48,997 Found -1220 captions in ToolTip Noti Vol
+2022-01-31 19:16:49,022 Found 15 columns in ToolTip Notification Rate
+2022-01-31 19:16:49,022 Found -1235 captions in ToolTip Notification Rate
+2022-01-31 19:16:49,048 Found 11 columns in Total Alerts
+2022-01-31 19:16:49,048 Found -1246 captions in Total Alerts
+2022-01-31 19:16:49,073 Found 13 columns in Total Alerts per Patient
+2022-01-31 19:16:49,073 Found -1259 captions in Total Alerts per Patient
+2022-01-31 19:16:49,099 Found 12 columns in Total Encounters
+2022-01-31 19:16:49,099 Found -1271 captions in Total Encounters
+2022-01-31 19:16:49,125 Found 11 columns in Total Notifications
+2022-01-31 19:16:49,126 Found -1282 captions in Total Notifications
+2022-01-31 19:16:49,153 Found 22 columns in Volume
+2022-01-31 19:16:49,153 Found -1304 captions in Volume
+2022-01-31 19:16:49,154 Found 26 dashboards
+2022-01-31 19:16:49,154 Found 41 dashboards
+2022-01-31 19:16:49,154 Found 58 dashboards
+2022-01-31 19:16:49,155 Found 76 dashboards
+2022-01-31 19:16:49,155 Found 94 dashboards
+2022-01-31 19:16:49,155 Found 113 dashboards
+2022-01-31 19:16:49,155 Found 125 dashboards
+2022-01-31 19:16:49,155 Found 125 dashboards
+2022-01-31 19:16:49,155 Writing to 
+2022-01-31 19:16:49,611 Finished processing /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:16:49,611 Processing took 1.7 seconds
+2022-01-31 19:16:49,615 Finished Workbook Documentation creation using processworkbookdocumentation.py
+2022-01-31 19:18:24,037 Input File is /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:18:24,038 Input File is /Users/jj2362/Downloads/HealtheAnalytics_style_guide.json
+2022-01-31 19:18:24,038 Output directory is /Users/jj2362/Desktop/docs out
+2022-01-31 19:18:24,038 infile name = /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:18:24,038 Starting to process /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:18:24,201 now processing Parameters data source
+2022-01-31 19:18:24,201 Found 0 connections
+2022-01-31 19:18:24,201 Found 8 parameters
+2022-01-31 19:18:24,201 Found 8 calculations
+2022-01-31 19:18:24,201 Found 0 custom SQL queries
+2022-01-31 19:18:24,202 Found 0 tables
+2022-01-31 19:18:24,202 Found 0 columns
+2022-01-31 19:18:24,202 now processing Unified Analytics - SJS Alert Discovery data source
+2022-01-31 19:18:24,202 Found 1 connections
+2022-01-31 19:18:24,202 Found 8 parameters
+2022-01-31 19:18:24,207 Found 69 calculations
+2022-01-31 19:18:24,207 Found 0 custom SQL queries
+2022-01-31 19:18:24,207 Found 0 tables
+2022-01-31 19:18:24,210 Found 33 columns
+2022-01-31 19:18:24,210 Found 12 columns in # Of Patients
+2022-01-31 19:18:24,210 Found -12 captions in # Of Patients
+2022-01-31 19:18:24,213 Found 29 columns in % First
+2022-01-31 19:18:24,213 Found -41 captions in % First
+2022-01-31 19:18:24,215 Found 20 columns in Alert Details
+2022-01-31 19:18:24,215 Found -61 captions in Alert Details
+2022-01-31 19:18:24,217 Found 11 columns in Alerts A
+2022-01-31 19:18:24,217 Found -72 captions in Alerts A
+2022-01-31 19:18:24,220 Found 16 columns in Alerts Calendar
+2022-01-31 19:18:24,220 Found -88 captions in Alerts Calendar
+2022-01-31 19:18:24,223 Found 13 columns in Alerts Disch
+2022-01-31 19:18:24,223 Found -101 captions in Alerts Disch
+2022-01-31 19:18:24,226 Found 17 columns in Alerts F
+2022-01-31 19:18:24,227 Found -118 captions in Alerts F
+2022-01-31 19:18:24,230 Found 13 columns in Alerts Fin
+2022-01-31 19:18:24,230 Found -131 captions in Alerts Fin
+2022-01-31 19:18:24,233 Found 10 columns in Alerts Hour
+2022-01-31 19:18:24,233 Found -141 captions in Alerts Hour
+2022-01-31 19:18:24,237 Found 17 columns in Alerts M
+2022-01-31 19:18:24,237 Found -158 captions in Alerts M
+2022-01-31 19:18:24,241 Found 13 columns in Alerts Race
+2022-01-31 19:18:24,241 Found -171 captions in Alerts Race
+2022-01-31 19:18:24,245 Found 10 columns in Alerts WD
+2022-01-31 19:18:24,245 Found -181 captions in Alerts WD
+2022-01-31 19:18:24,249 Found 15 columns in Alerts by Encounter Type (2)
+2022-01-31 19:18:24,249 Found -196 captions in Alerts by Encounter Type (2)
+2022-01-31 19:18:24,253 Found 15 columns in Alerts by Location (2)
+2022-01-31 19:18:24,253 Found -211 captions in Alerts by Location (2)
+2022-01-31 19:18:24,257 Found 14 columns in Alerts by Med Service (2)
+2022-01-31 19:18:24,257 Found -225 captions in Alerts by Med Service (2)
+2022-01-31 19:18:24,262 Found 14 columns in Alerts over Time (2)
+2022-01-31 19:18:24,262 Found -239 captions in Alerts over Time (2)
+2022-01-31 19:18:24,267 Found 15 columns in Avg Alerts by Encounter Type (2)
+2022-01-31 19:18:24,267 Found -254 captions in Avg Alerts by Encounter Type (2)
+2022-01-31 19:18:24,272 Found 15 columns in Avg Alerts by Location (2)
+2022-01-31 19:18:24,272 Found -269 captions in Avg Alerts by Location (2)
+2022-01-31 19:18:24,277 Found 15 columns in Avg Alerts by Med Service (2)
+2022-01-31 19:18:24,277 Found -284 captions in Avg Alerts by Med Service (2)
+2022-01-31 19:18:24,283 Found 15 columns in Avg Alerts over Time (2)
+2022-01-31 19:18:24,283 Found -299 captions in Avg Alerts over Time (2)
+2022-01-31 19:18:24,289 Found 17 columns in Avg All Timing
+2022-01-31 19:18:24,289 Found -316 captions in Avg All Timing
+2022-01-31 19:18:24,295 Found 18 columns in Avg SIRS Timing
+2022-01-31 19:18:24,295 Found -334 captions in Avg SIRS Timing
+2022-01-31 19:18:24,301 Found 18 columns in Avg Sepsis Timing
+2022-01-31 19:18:24,301 Found -352 captions in Avg Sepsis Timing
+2022-01-31 19:18:24,309 Found 23 columns in Demographic Details
+2022-01-31 19:18:24,309 Found -375 captions in Demographic Details
+2022-01-31 19:18:24,316 Found 17 columns in ET Volume Diag
+2022-01-31 19:18:24,317 Found -392 captions in ET Volume Diag
+2022-01-31 19:18:24,325 Found 24 columns in FA% ET (2)
+2022-01-31 19:18:24,325 Found -416 captions in FA% ET (2)
+2022-01-31 19:18:24,334 Found 24 columns in FA% Loc (2)
+2022-01-31 19:18:24,334 Found -440 captions in FA% Loc (2)
+2022-01-31 19:18:24,343 Found 24 columns in FA% MS (2)
+2022-01-31 19:18:24,344 Found -464 captions in FA% MS (2)
+2022-01-31 19:18:24,354 Found 24 columns in FA% Over Time (2)
+2022-01-31 19:18:24,354 Found -488 captions in FA% Over Time (2)
+2022-01-31 19:18:24,364 Found 16 columns in Highest Alert: SIRS
+2022-01-31 19:18:24,364 Found -504 captions in Highest Alert: SIRS
+2022-01-31 19:18:24,375 Found 16 columns in Highest Alert: Sepsis
+2022-01-31 19:18:24,375 Found -520 captions in Highest Alert: Sepsis
+2022-01-31 19:18:24,386 Found 18 columns in Location Volume Diag
+2022-01-31 19:18:24,386 Found -538 captions in Location Volume Diag
+2022-01-31 19:18:24,398 Found 19 columns in MS Volume Diag
+2022-01-31 19:18:24,398 Found -557 captions in MS Volume Diag
+2022-01-31 19:18:24,410 Found 22 columns in NTT Med Service
+2022-01-31 19:18:24,410 Found -579 captions in NTT Med Service
+2022-01-31 19:18:24,422 Found 22 columns in NTT Nurse
+2022-01-31 19:18:24,423 Found -601 captions in NTT Nurse
+2022-01-31 19:18:24,436 Found 25 columns in Notification Details
+2022-01-31 19:18:24,436 Found -626 captions in Notification Details
+2022-01-31 19:18:24,449 Found 16 columns in Notification Distribution
+2022-01-31 19:18:24,449 Found -642 captions in Notification Distribution
+2022-01-31 19:18:24,464 Found 17 columns in Notification Rate Over Time
+2022-01-31 19:18:24,464 Found -659 captions in Notification Rate Over Time
+2022-01-31 19:18:24,478 Found 21 columns in Notification Time By Encounter Type
+2022-01-31 19:18:24,478 Found -680 captions in Notification Time By Encounter Type
+2022-01-31 19:18:24,493 Found 22 columns in Notification Time By Location
+2022-01-31 19:18:24,493 Found -702 captions in Notification Time By Location
+2022-01-31 19:18:24,508 Found 21 columns in Notification Time Over Time
+2022-01-31 19:18:24,508 Found -723 captions in Notification Time Over Time
+2022-01-31 19:18:24,525 Found 20 columns in Notifications by Encounter Type
+2022-01-31 19:18:24,525 Found -743 captions in Notifications by Encounter Type
+2022-01-31 19:18:24,542 Found 20 columns in Notifications by location
+2022-01-31 19:18:24,542 Found -763 captions in Notifications by location
+2022-01-31 19:18:24,559 Found 21 columns in Notifications by nurse
+2022-01-31 19:18:24,559 Found -784 captions in Notifications by nurse
+2022-01-31 19:18:24,576 Found 14 columns in Notified Provider
+2022-01-31 19:18:24,576 Found -798 captions in Notified Provider
+2022-01-31 19:18:24,593 Found 13 columns in Number of Alerts
+2022-01-31 19:18:24,593 Found -811 captions in Number of Alerts
+2022-01-31 19:18:24,611 Found 17 columns in Overall Notification Rate
+2022-01-31 19:18:24,611 Found -828 captions in Overall Notification Rate
+2022-01-31 19:18:24,629 Found 21 columns in Per Patient
+2022-01-31 19:18:24,630 Found -849 captions in Per Patient
+2022-01-31 19:18:24,648 Found 19 columns in Progression % ET (2)
+2022-01-31 19:18:24,648 Found -868 captions in Progression % ET (2)
+2022-01-31 19:18:24,667 Found 20 columns in Progression % Loc (2)
+2022-01-31 19:18:24,668 Found -888 captions in Progression % Loc (2)
+2022-01-31 19:18:24,687 Found 19 columns in Progression % MS (2)
+2022-01-31 19:18:24,687 Found -907 captions in Progression % MS (2)
+2022-01-31 19:18:24,707 Found 15 columns in SIRS Alerts
+2022-01-31 19:18:24,707 Found -922 captions in SIRS Alerts
+2022-01-31 19:18:24,727 Found 17 columns in SIRS Diagnosis %
+2022-01-31 19:18:24,727 Found -939 captions in SIRS Diagnosis %
+2022-01-31 19:18:24,747 Found 18 columns in SIRS Notification Rate
+2022-01-31 19:18:24,747 Found -957 captions in SIRS Notification Rate
+2022-01-31 19:18:24,768 Found 15 columns in SIRS Notifications
+2022-01-31 19:18:24,768 Found -972 captions in SIRS Notifications
+2022-01-31 19:18:24,789 Found 16 columns in Sepsis Alerts
+2022-01-31 19:18:24,789 Found -988 captions in Sepsis Alerts
+2022-01-31 19:18:24,810 Found 15 columns in Sepsis Alerts    
+2022-01-31 19:18:24,810 Found -1003 captions in Sepsis Alerts    
+2022-01-31 19:18:24,832 Found 24 columns in Sepsis Details
+2022-01-31 19:18:24,832 Found -1027 captions in Sepsis Details
+2022-01-31 19:18:24,853 Found 17 columns in Sepsis Diagnosis %
+2022-01-31 19:18:24,853 Found -1044 captions in Sepsis Diagnosis %
+2022-01-31 19:18:24,875 Found 14 columns in Sepsis Encounters
+2022-01-31 19:18:24,875 Found -1058 captions in Sepsis Encounters
+2022-01-31 19:18:24,897 Found 18 columns in Sepsis Notification Rate
+2022-01-31 19:18:24,898 Found -1076 captions in Sepsis Notification Rate
+2022-01-31 19:18:24,920 Found 15 columns in Sepsis Notifications
+2022-01-31 19:18:24,920 Found -1091 captions in Sepsis Notifications
+2022-01-31 19:18:24,943 Found 13 columns in Severity
+2022-01-31 19:18:24,943 Found -1104 captions in Severity
+2022-01-31 19:18:24,966 Found 17 columns in Time Volume Diag
+2022-01-31 19:18:24,966 Found -1121 captions in Time Volume Diag
+2022-01-31 19:18:24,991 Found 13 columns in ToolTip Alert / Patient
+2022-01-31 19:18:24,991 Found -1134 captions in ToolTip Alert / Patient
+2022-01-31 19:18:25,015 Found 14 columns in ToolTip Alert Volume
+2022-01-31 19:18:25,015 Found -1148 captions in ToolTip Alert Volume
+2022-01-31 19:18:25,039 Found 13 columns in ToolTip Encounters
+2022-01-31 19:18:25,039 Found -1161 captions in ToolTip Encounters
+2022-01-31 19:18:25,063 Found 13 columns in ToolTip Female
+2022-01-31 19:18:25,063 Found -1174 captions in ToolTip Female
+2022-01-31 19:18:25,088 Found 13 columns in ToolTip Male
+2022-01-31 19:18:25,088 Found -1187 captions in ToolTip Male
+2022-01-31 19:18:25,112 Found 13 columns in ToolTip Noti Time
+2022-01-31 19:18:25,113 Found -1200 captions in ToolTip Noti Time
+2022-01-31 19:18:25,138 Found 20 columns in ToolTip Noti Vol
+2022-01-31 19:18:25,138 Found -1220 captions in ToolTip Noti Vol
+2022-01-31 19:18:25,163 Found 15 columns in ToolTip Notification Rate
+2022-01-31 19:18:25,163 Found -1235 captions in ToolTip Notification Rate
+2022-01-31 19:18:25,189 Found 11 columns in Total Alerts
+2022-01-31 19:18:25,189 Found -1246 captions in Total Alerts
+2022-01-31 19:18:25,215 Found 13 columns in Total Alerts per Patient
+2022-01-31 19:18:25,215 Found -1259 captions in Total Alerts per Patient
+2022-01-31 19:18:25,241 Found 12 columns in Total Encounters
+2022-01-31 19:18:25,241 Found -1271 captions in Total Encounters
+2022-01-31 19:18:25,267 Found 11 columns in Total Notifications
+2022-01-31 19:18:25,267 Found -1282 captions in Total Notifications
+2022-01-31 19:18:25,293 Found 22 columns in Volume
+2022-01-31 19:18:25,293 Found -1304 captions in Volume
+2022-01-31 19:18:25,294 Found 26 dashboards
+2022-01-31 19:18:25,294 Found 41 dashboards
+2022-01-31 19:18:25,294 Found 58 dashboards
+2022-01-31 19:18:25,294 Found 76 dashboards
+2022-01-31 19:18:25,294 Found 94 dashboards
+2022-01-31 19:18:25,294 Found 113 dashboards
+2022-01-31 19:18:25,294 Found 125 dashboards
+2022-01-31 19:18:25,294 Found 125 dashboards
+2022-01-31 19:18:25,295 Writing to 
+2022-01-31 19:18:25,739 Finished processing /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:18:25,739 Processing took 1.7 seconds
+2022-01-31 19:18:25,744 Finished Workbook Documentation creation using processworkbookdocumentation.py
+2022-01-31 19:42:55,992 Started
+2022-01-31 19:43:12,900 Input File is /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:43:12,900 Input File is /Users/jj2362/Downloads/HealtheAnalytics_style_guide.json
+2022-01-31 19:43:12,901 Output directory is /Users/jj2362/Desktop/docs out
+2022-01-31 19:43:12,901 infile name = /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:43:12,901 Starting to process /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:43:13,064 now processing Parameters data source
+2022-01-31 19:43:13,064 Found 0 connections
+2022-01-31 19:43:13,064 Found 8 parameters
+2022-01-31 19:43:13,064 Found 8 calculations
+2022-01-31 19:43:13,064 Found 0 custom SQL queries
+2022-01-31 19:43:13,064 Found 0 tables
+2022-01-31 19:43:13,065 Found 0 columns
+2022-01-31 19:43:13,065 now processing Unified Analytics - SJS Alert Discovery data source
+2022-01-31 19:43:13,065 Found 1 connections
+2022-01-31 19:43:13,065 Found 8 parameters
+2022-01-31 19:43:13,069 Found 69 calculations
+2022-01-31 19:43:13,069 Found 0 custom SQL queries
+2022-01-31 19:43:13,069 Found 0 tables
+2022-01-31 19:43:13,072 Found 33 columns
+2022-01-31 19:43:13,072 Found 12 columns in # Of Patients
+2022-01-31 19:43:13,072 Found -12 captions in # Of Patients
+2022-01-31 19:43:13,074 Found 29 columns in % First
+2022-01-31 19:43:13,074 Found -41 captions in % First
+2022-01-31 19:43:13,076 Found 20 columns in Alert Details
+2022-01-31 19:43:13,076 Found -61 captions in Alert Details
+2022-01-31 19:43:13,078 Found 11 columns in Alerts A
+2022-01-31 19:43:13,078 Found -72 captions in Alerts A
+2022-01-31 19:43:13,080 Found 16 columns in Alerts Calendar
+2022-01-31 19:43:13,080 Found -88 captions in Alerts Calendar
+2022-01-31 19:43:13,083 Found 13 columns in Alerts Disch
+2022-01-31 19:43:13,083 Found -101 captions in Alerts Disch
+2022-01-31 19:43:13,085 Found 17 columns in Alerts F
+2022-01-31 19:43:13,085 Found -118 captions in Alerts F
+2022-01-31 19:43:13,088 Found 13 columns in Alerts Fin
+2022-01-31 19:43:13,088 Found -131 captions in Alerts Fin
+2022-01-31 19:43:13,091 Found 10 columns in Alerts Hour
+2022-01-31 19:43:13,091 Found -141 captions in Alerts Hour
+2022-01-31 19:43:13,094 Found 17 columns in Alerts M
+2022-01-31 19:43:13,094 Found -158 captions in Alerts M
+2022-01-31 19:43:13,098 Found 13 columns in Alerts Race
+2022-01-31 19:43:13,098 Found -171 captions in Alerts Race
+2022-01-31 19:43:13,101 Found 10 columns in Alerts WD
+2022-01-31 19:43:13,101 Found -181 captions in Alerts WD
+2022-01-31 19:43:13,105 Found 15 columns in Alerts by Encounter Type (2)
+2022-01-31 19:43:13,105 Found -196 captions in Alerts by Encounter Type (2)
+2022-01-31 19:43:13,109 Found 15 columns in Alerts by Location (2)
+2022-01-31 19:43:13,109 Found -211 captions in Alerts by Location (2)
+2022-01-31 19:43:13,114 Found 14 columns in Alerts by Med Service (2)
+2022-01-31 19:43:13,114 Found -225 captions in Alerts by Med Service (2)
+2022-01-31 19:43:13,118 Found 14 columns in Alerts over Time (2)
+2022-01-31 19:43:13,118 Found -239 captions in Alerts over Time (2)
+2022-01-31 19:43:13,123 Found 15 columns in Avg Alerts by Encounter Type (2)
+2022-01-31 19:43:13,123 Found -254 captions in Avg Alerts by Encounter Type (2)
+2022-01-31 19:43:13,128 Found 15 columns in Avg Alerts by Location (2)
+2022-01-31 19:43:13,128 Found -269 captions in Avg Alerts by Location (2)
+2022-01-31 19:43:13,134 Found 15 columns in Avg Alerts by Med Service (2)
+2022-01-31 19:43:13,134 Found -284 captions in Avg Alerts by Med Service (2)
+2022-01-31 19:43:13,139 Found 15 columns in Avg Alerts over Time (2)
+2022-01-31 19:43:13,139 Found -299 captions in Avg Alerts over Time (2)
+2022-01-31 19:43:13,145 Found 17 columns in Avg All Timing
+2022-01-31 19:43:13,145 Found -316 captions in Avg All Timing
+2022-01-31 19:43:13,152 Found 18 columns in Avg SIRS Timing
+2022-01-31 19:43:13,152 Found -334 captions in Avg SIRS Timing
+2022-01-31 19:43:13,158 Found 18 columns in Avg Sepsis Timing
+2022-01-31 19:43:13,159 Found -352 captions in Avg Sepsis Timing
+2022-01-31 19:43:13,166 Found 23 columns in Demographic Details
+2022-01-31 19:43:13,166 Found -375 captions in Demographic Details
+2022-01-31 19:43:13,174 Found 17 columns in ET Volume Diag
+2022-01-31 19:43:13,174 Found -392 captions in ET Volume Diag
+2022-01-31 19:43:13,182 Found 24 columns in FA% ET (2)
+2022-01-31 19:43:13,182 Found -416 captions in FA% ET (2)
+2022-01-31 19:43:13,191 Found 24 columns in FA% Loc (2)
+2022-01-31 19:43:13,191 Found -440 captions in FA% Loc (2)
+2022-01-31 19:43:13,200 Found 24 columns in FA% MS (2)
+2022-01-31 19:43:13,200 Found -464 captions in FA% MS (2)
+2022-01-31 19:43:13,211 Found 24 columns in FA% Over Time (2)
+2022-01-31 19:43:13,211 Found -488 captions in FA% Over Time (2)
+2022-01-31 19:43:13,221 Found 16 columns in Highest Alert: SIRS
+2022-01-31 19:43:13,221 Found -504 captions in Highest Alert: SIRS
+2022-01-31 19:43:13,232 Found 16 columns in Highest Alert: Sepsis
+2022-01-31 19:43:13,232 Found -520 captions in Highest Alert: Sepsis
+2022-01-31 19:43:13,243 Found 18 columns in Location Volume Diag
+2022-01-31 19:43:13,244 Found -538 captions in Location Volume Diag
+2022-01-31 19:43:13,256 Found 19 columns in MS Volume Diag
+2022-01-31 19:43:13,256 Found -557 captions in MS Volume Diag
+2022-01-31 19:43:13,269 Found 22 columns in NTT Med Service
+2022-01-31 19:43:13,269 Found -579 captions in NTT Med Service
+2022-01-31 19:43:13,282 Found 22 columns in NTT Nurse
+2022-01-31 19:43:13,283 Found -601 captions in NTT Nurse
+2022-01-31 19:43:13,297 Found 25 columns in Notification Details
+2022-01-31 19:43:13,297 Found -626 captions in Notification Details
+2022-01-31 19:43:13,310 Found 16 columns in Notification Distribution
+2022-01-31 19:43:13,310 Found -642 captions in Notification Distribution
+2022-01-31 19:43:13,324 Found 17 columns in Notification Rate Over Time
+2022-01-31 19:43:13,324 Found -659 captions in Notification Rate Over Time
+2022-01-31 19:43:13,339 Found 21 columns in Notification Time By Encounter Type
+2022-01-31 19:43:13,339 Found -680 captions in Notification Time By Encounter Type
+2022-01-31 19:43:13,354 Found 22 columns in Notification Time By Location
+2022-01-31 19:43:13,354 Found -702 captions in Notification Time By Location
+2022-01-31 19:43:13,370 Found 21 columns in Notification Time Over Time
+2022-01-31 19:43:13,370 Found -723 captions in Notification Time Over Time
+2022-01-31 19:43:13,387 Found 20 columns in Notifications by Encounter Type
+2022-01-31 19:43:13,387 Found -743 captions in Notifications by Encounter Type
+2022-01-31 19:43:13,404 Found 20 columns in Notifications by location
+2022-01-31 19:43:13,404 Found -763 captions in Notifications by location
+2022-01-31 19:43:13,422 Found 21 columns in Notifications by nurse
+2022-01-31 19:43:13,422 Found -784 captions in Notifications by nurse
+2022-01-31 19:43:13,439 Found 14 columns in Notified Provider
+2022-01-31 19:43:13,440 Found -798 captions in Notified Provider
+2022-01-31 19:43:13,457 Found 13 columns in Number of Alerts
+2022-01-31 19:43:13,458 Found -811 captions in Number of Alerts
+2022-01-31 19:43:13,476 Found 17 columns in Overall Notification Rate
+2022-01-31 19:43:13,476 Found -828 captions in Overall Notification Rate
+2022-01-31 19:43:13,496 Found 21 columns in Per Patient
+2022-01-31 19:43:13,496 Found -849 captions in Per Patient
+2022-01-31 19:43:13,515 Found 19 columns in Progression % ET (2)
+2022-01-31 19:43:13,515 Found -868 captions in Progression % ET (2)
+2022-01-31 19:43:13,535 Found 20 columns in Progression % Loc (2)
+2022-01-31 19:43:13,535 Found -888 captions in Progression % Loc (2)
+2022-01-31 19:43:13,555 Found 19 columns in Progression % MS (2)
+2022-01-31 19:43:13,555 Found -907 captions in Progression % MS (2)
+2022-01-31 19:43:13,575 Found 15 columns in SIRS Alerts
+2022-01-31 19:43:13,575 Found -922 captions in SIRS Alerts
+2022-01-31 19:43:13,595 Found 17 columns in SIRS Diagnosis %
+2022-01-31 19:43:13,595 Found -939 captions in SIRS Diagnosis %
+2022-01-31 19:43:13,617 Found 18 columns in SIRS Notification Rate
+2022-01-31 19:43:13,617 Found -957 captions in SIRS Notification Rate
+2022-01-31 19:43:13,640 Found 15 columns in SIRS Notifications
+2022-01-31 19:43:13,640 Found -972 captions in SIRS Notifications
+2022-01-31 19:43:13,661 Found 16 columns in Sepsis Alerts
+2022-01-31 19:43:13,662 Found -988 captions in Sepsis Alerts
+2022-01-31 19:43:13,683 Found 15 columns in Sepsis Alerts    
+2022-01-31 19:43:13,683 Found -1003 captions in Sepsis Alerts    
+2022-01-31 19:43:13,706 Found 24 columns in Sepsis Details
+2022-01-31 19:43:13,706 Found -1027 captions in Sepsis Details
+2022-01-31 19:43:13,729 Found 17 columns in Sepsis Diagnosis %
+2022-01-31 19:43:13,729 Found -1044 captions in Sepsis Diagnosis %
+2022-01-31 19:43:13,752 Found 14 columns in Sepsis Encounters
+2022-01-31 19:43:13,752 Found -1058 captions in Sepsis Encounters
+2022-01-31 19:43:13,775 Found 18 columns in Sepsis Notification Rate
+2022-01-31 19:43:13,775 Found -1076 captions in Sepsis Notification Rate
+2022-01-31 19:43:13,799 Found 15 columns in Sepsis Notifications
+2022-01-31 19:43:13,799 Found -1091 captions in Sepsis Notifications
+2022-01-31 19:43:13,822 Found 13 columns in Severity
+2022-01-31 19:43:13,822 Found -1104 captions in Severity
+2022-01-31 19:43:13,846 Found 17 columns in Time Volume Diag
+2022-01-31 19:43:13,846 Found -1121 captions in Time Volume Diag
+2022-01-31 19:43:13,870 Found 13 columns in ToolTip Alert / Patient
+2022-01-31 19:43:13,870 Found -1134 captions in ToolTip Alert / Patient
+2022-01-31 19:43:13,895 Found 14 columns in ToolTip Alert Volume
+2022-01-31 19:43:13,895 Found -1148 captions in ToolTip Alert Volume
+2022-01-31 19:43:13,920 Found 13 columns in ToolTip Encounters
+2022-01-31 19:43:13,920 Found -1161 captions in ToolTip Encounters
+2022-01-31 19:43:13,945 Found 13 columns in ToolTip Female
+2022-01-31 19:43:13,945 Found -1174 captions in ToolTip Female
+2022-01-31 19:43:13,969 Found 13 columns in ToolTip Male
+2022-01-31 19:43:13,969 Found -1187 captions in ToolTip Male
+2022-01-31 19:43:13,995 Found 13 columns in ToolTip Noti Time
+2022-01-31 19:43:13,995 Found -1200 captions in ToolTip Noti Time
+2022-01-31 19:43:14,020 Found 20 columns in ToolTip Noti Vol
+2022-01-31 19:43:14,020 Found -1220 captions in ToolTip Noti Vol
+2022-01-31 19:43:14,047 Found 15 columns in ToolTip Notification Rate
+2022-01-31 19:43:14,047 Found -1235 captions in ToolTip Notification Rate
+2022-01-31 19:43:14,073 Found 11 columns in Total Alerts
+2022-01-31 19:43:14,073 Found -1246 captions in Total Alerts
+2022-01-31 19:43:14,099 Found 13 columns in Total Alerts per Patient
+2022-01-31 19:43:14,099 Found -1259 captions in Total Alerts per Patient
+2022-01-31 19:43:14,125 Found 12 columns in Total Encounters
+2022-01-31 19:43:14,125 Found -1271 captions in Total Encounters
+2022-01-31 19:43:14,151 Found 11 columns in Total Notifications
+2022-01-31 19:43:14,151 Found -1282 captions in Total Notifications
+2022-01-31 19:43:14,178 Found 22 columns in Volume
+2022-01-31 19:43:14,179 Found -1304 captions in Volume
+2022-01-31 19:43:14,179 Found 26 dashboards
+2022-01-31 19:43:14,179 Found 41 dashboards
+2022-01-31 19:43:14,179 Found 58 dashboards
+2022-01-31 19:43:14,180 Found 76 dashboards
+2022-01-31 19:43:14,180 Found 94 dashboards
+2022-01-31 19:43:14,180 Found 113 dashboards
+2022-01-31 19:43:14,180 Found 125 dashboards
+2022-01-31 19:43:14,180 Found 125 dashboards
+2022-01-31 19:43:14,183 Writing to 
+2022-01-31 19:43:14,629 Finished processing /Users/jj2362/Downloads/CUAR_SJS Discovery.twbx
+2022-01-31 19:43:14,629 Processing took 1.73 seconds
+2022-01-31 19:43:14,633 Finished Workbook Documentation creation using processworkbookdocumentation.py
