@@ -25,7 +25,7 @@ def find_file_in_zip(zip_file):
                 pass
 
 
-st.write("#Welcome to the Tableau Workbook Documentation tool!")
+st.write("# Welcome to the Tableau Workbook Documentation tool!")
 
 infile = st.file_uploader("Tableau workbook to document:")
 
