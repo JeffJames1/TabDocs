@@ -1,8 +1,3 @@
-"""
-    Standard functions for creating tkinter interfaces
-    Nothing fancy. Just makes it simpler to have a consistent look and feel for very simple applications.
-"""
-
 from tkinter import *
 from tkinter.ttk import *
 

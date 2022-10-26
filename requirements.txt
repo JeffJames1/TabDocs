@@ -1,3 +1,7 @@
+tableaudocumentapi~=0.7
+bs4~=0.0.1
+beautifulsoup4==4.10.0
+colorama~=0.4.4
 pyinstaller
-tableaudocumentapi
+lxml
 openpyxl

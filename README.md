@@ -12,9 +12,12 @@ The program will create an Excel spreadsheet containing overall information abou
 ### Options:
 * Scope to process: choose an individual file or directory to process
 * File or Directory to process: path to content
-    * Click browse to get a dialog to pick the content location
+  * Click browse to get a dialog to pick the content location
+* Style Guide for Validation: path to style guide json
+  * Click browse to get a dialog to pick the content location
+  * Leave blank if you don't want to validate styles
 * Save Directory: path where output will be saved
-    * Click browse to get a dialog to pick the content location
+  * Click browse to get a dialog to pick the content location
 * Start on open: set using commandline. When chosen, the processing will start immediately
 * Hide Error Dialogs: set manually or using commandline. When chosen, no intermediate error dialogs will be shown. List of error files will still be included in the final dialog box
 * OK: Click to start processing
