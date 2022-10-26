@@ -27,7 +27,7 @@ def find_file_in_zip(zip_file):
 
 st.write("# Welcome to the Tableau Workbook Documentation tool!")
 
-infile = st.file_uploader("Tableau workbook to document:")
+infile = st.file_uploader("Tableau workbook or data source to document:")
 
 if infile is not None:
     if zipfile.is_zipfile(infile):
