@@ -2,11 +2,12 @@
     Web UI to parse tableau workbooks and data sources for documentation
 """
 import zipfile
+from os.path import splitext, basename
 import xml.etree.ElementTree as ET
-from io import StringIO
+from io import StringIO, BytesIO
 import streamlit as st
 
-# import WorkbookDocumentation
+import WorkbookDocumentation
 
 
 def find_file_in_zip(zip_file):
@@ -25,9 +26,11 @@ def find_file_in_zip(zip_file):
                 pass
 
 
-st.write("# Welcome to the Tableau Workbook Documentation tool!")
+st.title("Welcome to the Tableau Documentation tool!")
+st.write("Update a workbook or data source to be documented")
+st.write("twb/twbx and tds/tdsx files are supported")
 
-infile = st.file_uploader("Tableau workbook or data source to document:")
+infile = st.file_uploader("Tableau file to document:")
 
 if infile is not None:
     if zipfile.is_zipfile(infile):
@@ -41,6 +44,19 @@ if infile is not None:
         stringio = StringIO(infile.getvalue().decode("utf-8"))
         root = ET.fromstring(stringio.read())
 
-    st.write(root.tag)
+    style_guide = None
 
-    # st.download_button("Download binary file", target_file)
+    documentation = WorkbookDocumentation.WorkbookDocumentation(root, style_guide)
+
+    doc_workbook = documentation.build_excel_workbook()
+
+    with BytesIO() as output:
+        doc_workbook.save(output)
+        output.seek(0)
+        byte_data = output.read()
+
+    out_file_name = splitext(basename(infile.name))[0] + " Documentation.xlsx"
+
+    st.download_button(
+        "Download documentation file", byte_data, file_name=out_file_name
+    )
