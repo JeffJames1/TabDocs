@@ -3,6 +3,7 @@ import os
 import time
 import logging
 import json
+import xml.etree.ElementTree as ET
 import openpyxl
 from openpyxl.styles import Font
 import Handle_twbx
@@ -14,13 +15,20 @@ from validator.validate_styles import validate_styles
 class WorkbookDocumentation:
     """Core workbook class with methods to extract metadata"""
 
-    def __init__(self, input_file, style_guide=None):
+    def __init__(self, input_file: str | ET.Element, style_guide=None):
+
         if isinstance(input_file, str):
             workbook_tree, workbook_contents = Handle_twbx.xml_open(input_file)
+            root = workbook_tree.getroot()
+        elif isinstance(input_file, ET.Element):
+            root = input_file
         else:
-            workbook_tree = input_file
+            print("Incorrect data type used in input")
+            exit()
+        # workbook_tree, workbook_contents = Handle_twbx.xml_open(input_file)
         self.style_guide = style_guide
-        self.root = workbook_tree
+        # self.root = workbook_tree
+        self.root = root
         self.input_file = input_file
         self.connections = []
         self.tables = []
@@ -31,20 +39,25 @@ class WorkbookDocumentation:
         self.sets = []
         self.styles = []
 
-        self.document_type = workbook_tree.getroot().tag
+        # self.document_type = workbook_tree.getroot().tag
+        self.document_type = root.tag
 
         if self.document_type == "datasource":
-            self.datasource_root = workbook_tree.getroot()
-            self.process_datasource(workbook_tree.getroot())
+            # self.datasource_root = workbook_tree.getroot()
+            # self.process_datasource(workbook_tree.getroot())
+            self.datasource_root = root
+            self.process_datasource(root)
         else:
-            self.datasource_root = workbook_tree.find(".//datasources")
+            # self.datasource_root = workbook_tree.find(".//datasources")
+            self.datasource_root = root.find(".//datasources")
             try:
                 for datasource_node in self.datasource_root.findall("./datasource"):
                     self.process_datasource(datasource_node)
             except AttributeError:
                 print("No data sources found")
 
-            self.worksheet_root = workbook_tree.find(".//worksheets")
+            # self.worksheet_root = workbook_tree.find(".//worksheets")
+            self.worksheet_root = root.find(".//worksheets")
             self.worksheet_columns = []
             self.worksheet_captions = []
             try:
@@ -54,7 +67,8 @@ class WorkbookDocumentation:
             except AttributeError:
                 print("No worksheets found")
 
-            self.dashboard_root = workbook_tree.find(".//dashboards")
+            # self.dashboard_root = workbook_tree.find(".//dashboards")
+            self.dashboard_root = root.find(".//dashboards")
             self.dashboard_objects = []
             try:
                 for dashboard_node in self.dashboard_root.findall("./dashboard"):
@@ -721,6 +735,11 @@ class WorkbookDocumentation:
     def write_documentation(self, output_dir):
         """output individual object type information to separate sheets in an Excel workbook"""
         logging.info("Writing to %s", self.out_file)
+        wb = self.build_excel_workbook()
+        self._save_workbook(wb, self.input_file, output_dir)
+
+    def build_excel_workbook(self):
+        """create excel workbook from class"""
         wb = self._init_workbook()
         self._write_openpyxl_worksheet(wb, self.connections, "Connections")
         self._write_openpyxl_worksheet(wb, self.parameters, "Parameters")
@@ -753,7 +772,8 @@ class WorkbookDocumentation:
             self._write_openpyxl_worksheet(
                 wb, self.dashboard_objects, "Dashboard Objects"
             )
-        self._save_workbook(wb, self.input_file, output_dir)
+
+        return wb
 
     @staticmethod
     def _init_workbook():
@@ -767,7 +787,7 @@ class WorkbookDocumentation:
             output_dir
             + os.sep
             + os.path.splitext(os.path.basename(input_file))[0]
-            + " Documentation alt.xlsx"
+            + " Documentation.xlsx"
         )
         wb.save(out_file)
 
@@ -824,29 +844,12 @@ def main():
         format="%(asctime)s %(levelname)s %(message)s",
     )
     # try:
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\excel_test.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\HCC Opportunity Updated.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\1st Q1.twb",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("C:\\Users\\jj2362\\Desktop\\docs in\\standard frequent flyer.tds",
-    #                        'c:\\users\\jj2362\\desktop\\docs out')
-    # workbook_documentation("/Users/jj2362/Desktop/CHLA performance overview.twbx",
-    #                        '/Users/jj2362/Desktop/docs out',
-    #                        './validator/HealtheAnalytics_style_guide.json')
-    # workbook_documentation("/Users/jj2362/Desktop/Readmissions Discovery revised.twb",
-    #                        '/Users/jj2362/Desktop/docs out',
-    #                        './validator/HealtheAnalytics_style_guide.json')
     # workbook_documentation("./validator/tests/example_workbook.twb",
-    #                        "/Users/jj2362/Desktop/docs out",
-    #                        "./validator/tests/example_style_guide.json")
-    # workbook_documentation("./validator/tests/example_workbook.twb",
-    #                        "/Users/jj2362/Desktop/docs out",
+    #                        "~/Desktop/docs out",
     #                        "./validator/HealtheAnalytics_style_guide.json")
     workbook_documentation(
-        "/Users/jj2362/Downloads/PROCUREMENT - Purchasing Dashboard.twbx",
-        "/Users/jj2362/Desktop/docs out",
+        "~/Downloads/PROCUREMENT - Purchasing Dashboard.twbx",
+        "~/Desktop/docs out",
     )
     # except:
     #     logging.exception('')
