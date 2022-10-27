@@ -32,6 +32,8 @@ st.write("twb/twbx and tds/tdsx files are supported")
 
 infile = st.file_uploader("Tableau file to document:")
 
+st.write("Click the 'x' next to the upload file to remove it or upload a new file to restart.")
+
 if infile is not None:
     if zipfile.is_zipfile(infile):
         with zipfile.ZipFile(infile) as zip_object:
