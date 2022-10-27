@@ -15,7 +15,10 @@ class WorkbookDocumentation:
     """Core workbook class with methods to extract metadata"""
 
     def __init__(self, input_file, style_guide=None):
-        workbook_tree, workbook_contents = Handle_twbx.xml_open(input_file)
+        if isinstance(input_file, str):
+            workbook_tree, workbook_contents = Handle_twbx.xml_open(input_file)
+        else:
+            workbook_tree = input_file
         self.style_guide = style_guide
         self.root = workbook_tree
         self.input_file = input_file
