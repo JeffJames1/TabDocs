@@ -77,8 +77,7 @@ def process_uploaded_files(uploaded_files):
 def main():
     """Render page to create documentation"""
     st.title("Welcome to the Tableau Documentation tool!")
-    st.write("Update a workbook or data source to be documented")
-    st.write("twb/twbx and tds/tdsx files are supported")
+    st.write("Update one or more workbooks and/or data sources to be documented")
 
     with st.form("documentation-form", clear_on_submit=True):
         uploaded_files = st.file_uploader(
