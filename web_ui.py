@@ -85,7 +85,8 @@ def main():
             type=["twb", "twbx", "tds", "tdsx"],
             accept_multiple_files=True,
         )
-        submitted = st.form_submit_button("Process file(s)")
+        if len(uploaded_files) != 0:
+            submitted = st.form_submit_button("Process file(s)")
 
     if submitted is not None and len(uploaded_files) != 0:
         file_archive, byte_data, out_file_name = process_uploaded_files(uploaded_files)
