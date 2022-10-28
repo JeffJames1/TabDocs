@@ -81,7 +81,7 @@ def main():
 
     with st.form("documentation-form", clear_on_submit=True):
         uploaded_files = st.file_uploader(
-            "Tableau file to document:",
+            "Tableau file(s) to document:",
             type=["twb", "twbx", "tds", "tdsx"],
             accept_multiple_files=True,
         )
